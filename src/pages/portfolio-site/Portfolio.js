@@ -2,9 +2,12 @@ import React from 'react';
 
 import Nav from './Nav';
 import Divider from './Divider';
+import Projects from './Projects';
 
 import { StyledPortfolio, Title, TitleName, TitleAbout,
-    AboutMe, AboutMeLeftSection, AboutMeRightSection, AboutMeProfileImage } from './Portfolio.styled';
+    AboutMe, LeftSection, RightSection, AboutMeProfileImage,
+    ContactMe, ContactMeButton, Paragraph,
+    Learning, LearningLeftSection, LearningRightSection } from './Portfolio.styled';
 
 class Portfolio extends React.Component {
     render() {
@@ -24,12 +27,12 @@ class Portfolio extends React.Component {
                 <Divider topColor="white"/>
 
                 <AboutMe>
-                    <AboutMeLeftSection>
+                    <LeftSection>
                         <AboutMeProfileImage>
                             <img alt="profile" src="https://markswinimer.github.io/portfolio/static/media/profile-dog.a0bffbfc.jpg" />
                         </AboutMeProfileImage>
-                    </AboutMeLeftSection>
-                    <AboutMeRightSection>
+                    </LeftSection>
+                    <RightSection>
                         <h1>About me</h1>
                         <p>
                             Nice to meet you! I'm Mark and I create web applications and implement web  based solutions. Also, I love Dogs.
@@ -37,30 +40,27 @@ class Portfolio extends React.Component {
                         <p>
                             I have an interest in full stack development; especially using the technologies: Ruby, Javascript, React and other front end libraries which make creating web applications smoother and progressive.
                         </p>
-                    </AboutMeRightSection>
+                    </RightSection>
                 </AboutMe>
 
                 <Divider topColor="navy"/>
 
-                <Title>
-                </Title>
+                <Projects/>
 
                 <Divider topColor="white" />
 
-                <AboutMe>
-                    <div>
-                        <div className="Content-left">
-                            <div className="Content-tech">
-                                <p>React</p>
-                                <p>ES6 Javascript</p>
-                                <p>Node</p>
-                                <p>Ruby on Rails</p>
-                                <p>WordPress</p>
-                            </div>
-                        </div>
-                        <div className="Content-right">
+                <Learning>
+                        <LearningLeftSection>
+                            <p>React</p>
+                            <p>ES6 Javascript</p>
+                            <p>Node</p>
+                            <p>Ruby on Rails</p>
+                            <p>WordPress</p>
+                        </LearningLeftSection>
+                        <LearningRightSection>
                             <h1>What I'm learning</h1>
                             <h2>New technologies</h2>
+                            
                             <p>I have been familiarizing myself with React and exploring news ways to utilize this libray. New javascript technologies like Gatsby and Node applications have been fascinating to jump into.</p>
                             <ul className="Content-tech-media">
                                 <li>React</li>
@@ -69,19 +69,22 @@ class Portfolio extends React.Component {
                                 <li>Ruby on Rails</li>
                                 <li>WordPress</li>
                             </ul>
-                        </div>
-                    </div>
-                </AboutMe>
+                        </LearningRightSection>
+                </Learning>
 
                 <Divider topColor="navy"/>
 
-                <Title>
+                <ContactMe>
                     <h1>Contact me!</h1>
-                    <p>I'd love to share some of my work with you. Feel free to reach out via email or explore my work on github. I have also provided links to the live versions in the projects sections above. Local to Boston? I'm interested in meeting up with like-minded developers over coffee at a local cafe.</p>
-                        <div className="Contact-links">
-                            <div href="mailto:markswinimer@gmail.com" className="Contact-button"><a href="mailto:markswinimer@gmail.com">Reach out</a></div>
-                        </div>
-                </Title>
+                    <Paragraph>
+                        <p>I'd love to share some of my work with you. Feel free to reach out via email or explore my work on github. I have also provided links to the live versions in the projects sections above. Local to Boston? I'm interested in meeting up with like-minded developers over coffee at a local cafe.</p>
+                            <a href="mailto:markswinimer@gmail.com">
+                                <ContactMeButton>
+                                    Reach out
+                                </ContactMeButton>
+                            </a>
+                        </Paragraph>
+                </ContactMe>
 
             </StyledPortfolio>
         )

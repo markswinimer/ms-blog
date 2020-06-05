@@ -3,8 +3,43 @@ import styled from 'styled-components';
 // Main Portfolio
 export const StyledPortfolio = styled.div`
   border: .5em solid ${props => props.theme.color.navy};
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: ${props => props.theme.font.subheader};
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  p {
+      margin-top: 15px;
+      font-size: 19px;
+      font-weight: 300;
+  }
 `
-// Title Section
+
+export const Section = styled.div`
+    display: flex;
+    padding: 9rem 2.5rem;
+    background-color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.navy};
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+       margin-top: 15px;
+       font-size: 19px;
+       font-weight: 300;
+    }
+`
+//#region Title Section
 export const Title = styled.div`
     height: 370px;
     text-align: center;
@@ -53,20 +88,20 @@ export const TitleAbout = styled.div`
         margin-top: 1rem;
     }
 `
+//#endregion
 
-// AboutMe Section
-export const AboutMe = styled.div`
+//#region About Me Section
+
+export const AboutMe = styled(Section)`
   color: ${props => props.theme.color.white};
   background-color: ${props => props.theme.color.navy};
-  padding: 9rem 2.5rem;
   margin: auto;
-  display: flex;
   flex-direction: row;
   vertical-align: middle;
   justify-content: center;
 `
 
-export const AboutMeLeftSection = styled.div`
+export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +129,7 @@ export const AboutMeProfileImage = styled.div`
   }
 `
 
-export const AboutMeRightSection = styled.div`
+export const RightSection = styled.div`
     flex-grow: auto;
     max-width: 550px;
     display: flex;
@@ -112,4 +147,89 @@ export const AboutMeRightSection = styled.div`
        font-weight: 300;
     }
 `
+//#endregion
 
+//#region Contact Me Section
+export const ContactMe = styled(Section)`
+  text-align: center;
+  color: ${props => props.theme.color.navy};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 2.5rem;
+`
+
+export const Paragraph = styled.div`
+    max-width: 700px;
+    margin-top: 2em;
+
+`
+
+export const ContactMeButton = styled.div`
+  max-width: 125px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: .5em .5em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: ${props => props.theme.color.navy};
+  border: 1px solid ${props => props.theme.color.navy};
+  cursor: pointer;
+  transition: .2s ease-in;
+  font-family: ${props => props.theme.font.subheader};
+  
+  :hover {
+      color: ${props => props.theme.color.white};
+      background-color: ${props => props.theme.color.navy};
+      border: 1px solid ${props => props.theme.color.white};
+  }
+`
+//#endregion
+
+//#region 
+  
+export const Learning = styled.div`
+  color: ${props => props.theme.color.white};
+  background-color: ${props => props.theme.color.navy};
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: center;
+    vertical-align: middle;
+  // padding: $contentPadding;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  padding: 9rem 2.5rem;
+`
+export const LearningLeftSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 3px;
+  margin-top: .25rem;
+  padding: .5em 1em;
+  padding-bottom: 1em;
+  margin-right: 3em;
+  flex-basis: 1;
+  align-self: flex-start;
+
+  p {
+    margin: none;
+    padding: none;
+    margin-top: .25em;
+    font-size: 1.1rem;
+  }
+
+`
+export const LearningRightSection = styled.div`
+  flex-grow: auto;
+  max-width: 500px;
+`
+//#endregion

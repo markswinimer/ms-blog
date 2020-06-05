@@ -21,6 +21,10 @@ export const theme = {
 export const GlobalStyle = createGlobalStyle`
     ${reset}
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     h1 {
         font-family: ${props => props.theme.font.header};
         font-weight: 400;
@@ -45,5 +49,9 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    strong {
+        font-weight: bold;
     }
 `
