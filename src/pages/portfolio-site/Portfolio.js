@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Nav from './Nav';
 import Divider from './Divider';
 import Projects from './Projects';
-import Footer from './Footer';
 
 import { StyledPortfolio, Title, TitleName, TitleAbout,
     AboutMe, LeftSection, RightSection, AboutMeProfileImage,
