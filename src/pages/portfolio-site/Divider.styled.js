@@ -15,7 +15,7 @@ export const DividerTopShape = styled.div`
   top: ${props => props.topColor == "white" ? "25px" : "-20px"};
   right: ${props => props.topColor == "white" ? "2px" : "7px"};
   box-sizing: border-box;
-  border-top: 20px solid ${props => props.theme.color.navy};
+  /* border-top: 20px solid ${props => props.theme.color.navy}; */
   transform: rotate(45deg);
 `
 export const DividerBottomShape = styled.div`
