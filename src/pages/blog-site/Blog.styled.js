@@ -29,6 +29,3 @@ export const BlogPostPreview = styled.div`
         font-weight: 700;
     }
 `
-export const BlogExcerpt = styled.div`
-
-`

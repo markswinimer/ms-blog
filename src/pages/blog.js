@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 import Layout from '../components/layout';
 
-import { StyledBlog, BlogContainer, BlogPostPreview, BlogExcerpt } from './blog-site/Blog.styled';
+import { StyledBlog, BlogContainer, BlogPostPreview } from './blog-site/Blog.styled';
 
 const BlogPage = ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark;
