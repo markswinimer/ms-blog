@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from './Nav';
 import Divider from './Divider';
 import Projects from './Projects';
+import Footer from './Footer';
 
 import { StyledPortfolio, Title, TitleName, TitleAbout,
     AboutMe, LeftSection, RightSection, AboutMeProfileImage,
@@ -13,7 +14,6 @@ class Portfolio extends React.Component {
     render() {
         return(
             <StyledPortfolio>
-                <Nav/>
                 <Title>
                     <TitleName>
                         <h1>Mark Swinimer</h1>
@@ -85,7 +85,7 @@ class Portfolio extends React.Component {
                             </a>
                         </Paragraph>
                 </ContactMe>
-
+                
             </StyledPortfolio>
         )
     }

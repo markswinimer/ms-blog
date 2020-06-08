@@ -4,7 +4,7 @@ path: '/blog-posts'
 
 date: '2020-05-01T12:00:00+00:00'
 
-title: "Mark's Blog"
+title: "My experience at a tech bootcamp"
 
 tags: ["dev", "Portfolio", "Boston"]
 

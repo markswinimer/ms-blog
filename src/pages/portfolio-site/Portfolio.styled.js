@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // Main Portfolio
 export const StyledPortfolio = styled.div`
   border: .5em solid ${props => props.theme.color.navy};
+  border-top: none;
 
   h1 {
     font-size: 40px;

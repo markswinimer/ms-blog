@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledNav = styled.div`
-  max-width: ${props => props.theme.screen.maxWidth};
+  padding: ${props => props.theme.screen.contentPadding};
+  border: .5em solid ${props => props.theme.color.navy};
+  border-bottom: none;
+`
+
+export const NavContainer = styled.div`
   margin: auto;
   display: flex;
   flex-direction: row;
-  padding: ${props => props.theme.screen.contentPadding};;
+  max-width: ${props => props.theme.screen.maxWidth};
 `
 
 export const NavLogo = styled.div`

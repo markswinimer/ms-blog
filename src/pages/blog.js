@@ -1,21 +1,28 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import Layout from '../components/layout';
+
+import { StyledBlog, BlogContainer, BlogPostPreview, BlogExcerpt } from './blog-site/Blog.styled';
+
 const BlogPage = ({ data }) => {
     const { edges: posts } = data.allMarkdownRemark;
     console.log(posts);
     return (
-        <div>
+        <Layout>
+            <StyledBlog>
+            <BlogContainer>
             {posts.map(({ node: post }) => {
                 const { frontmatter } = post;
                 return (
-                    <div>
+                    <BlogPostPreview>
+                        <h4>LIFESTYLE</h4>
                         <h2>
                             <Link to={frontmatter.path}>
                                 {frontmatter.title}
                             </Link>
                         </h2>
-                        <p>{frontmatter.date}</p>
+                        <h3>{frontmatter.date}</h3>
                         <p>{frontmatter.excerpt}</p>
                         <ul>
                             {frontmatter.tags.map(tag => {
@@ -28,10 +35,12 @@ const BlogPage = ({ data }) => {
                                 );
                             })}
                         </ul>
-                    </div>
+                    </BlogPostPreview>
                 );
             })}
-        </div>
+                </BlogContainer>
+            </StyledBlog>
+        </Layout>
     );
 };
 

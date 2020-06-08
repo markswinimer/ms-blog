@@ -6,7 +6,7 @@ export const theme = {
         maxWidth: "1000px",
         defaultPadding: "1rem",
         contentPadding: "2.5rem"
-    },
+    }, 
     color: {
         navy: '#2a363b',
         white: '#fafafa'
@@ -32,6 +32,10 @@ export const GlobalStyle = createGlobalStyle`
     h2 {
         font-family: ${props => props.theme.font.subheader};
         font-weight: 500;
+    }
+    h3 {
+        font-family: ${props => props.theme.font.subheader};
+        font-weight: 400;
     }
     h4 {
         font-family: ${props => props.theme.font.subheader};
