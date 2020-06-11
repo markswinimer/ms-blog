@@ -11,19 +11,22 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   max-width: ${props => props.theme.screen.maxWidth};
+  a {
+    margin-right: auto;
+  }
 `
 
 export const NavLogo = styled.div`
   width: 40px;
   height: 40px;
   padding: 10px 10px;
-  margin-right: auto;
   border-radius: 2px;
   background-color: ${props => props.theme.color.navy};
   color:  ${props => props.theme.color.white};
   font-family: ${props => props.theme.font.header};;
   font-size: 40px;
   line-height: 50px;
+
 `
 
 export const NavLinks = styled.div`

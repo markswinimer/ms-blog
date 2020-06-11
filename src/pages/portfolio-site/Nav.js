@@ -8,14 +8,16 @@ export default class Nav extends React.Component {
         return(
             <StyledNav>
                 <NavContainer>
-                <NavLogo>M</NavLogo>
-                <NavLinks>
-                    <Link to={"/blog"}>my blog</Link>
-                    <a href="mailto:markswinimer@gmail.com">contact me</a>
-                    <a href="https://www.linkedin.com/in/markswinimer/">linkedin</a>
-                    <a href="https://github.com/markswinimer">github</a>
-                    {/* <a className="Navbar-link">blog</a> */}
-                </NavLinks>
+                    <Link to={"/"}>
+                        <NavLogo>M</NavLogo>
+                    </Link>
+                    <NavLinks>
+                        <Link to={"/blog"}>my blog</Link>
+                        <a href="mailto:markswinimer@gmail.com">contact me</a>
+                        <a href="https://www.linkedin.com/in/markswinimer/">linkedin</a>
+                        <a href="https://github.com/markswinimer">github</a>
+                        {/* <a className="Navbar-link">blog</a> */}
+                    </NavLinks>
                 </NavContainer>
             </StyledNav>
         )
