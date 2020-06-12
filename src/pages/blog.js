@@ -1,14 +1,27 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Blog from './blog-site/Blog';
+import Blog from '../react/blog-site/Blog';
 
 const BlogPage = ({ data }) => {
+    const blogposts = posts.map(({ node: post }) => {
+      const { frontmatter } = post;
+      return (
+        <div>
+          <h2>
+            <Link to={frontmatter.path}>
+              {frontmatter.title}
+            </Link>
+          </h2>
+          <p>{frontmatter.date}</p>
+          <p>{frontmatter.excerpt}</p>
+        </div>
+      );
+    })
 
-    const none = '';
     return (
         <Layout>
-            <Blog data={data}/>
+            <Blog blogposts={blogposts}/>
         </Layout>
     );
 };
@@ -22,7 +35,6 @@ export const query = graphql`
           id
           frontmatter {
             title
-            category
             date(formatString: "MMMM DD, YYYY")
             path
             tags

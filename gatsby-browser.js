@@ -1,13 +1,3 @@
-// import React from 'react';
-// import Layout from './src/components/layout';
-// import { ThemeProvider } from 'styled-components';
-// import { GlobalStyle, theme } from './src/theme/global-style';
+// import { wrapRootElement as wrap } from './root-wrapper';
 
-// export const wrapRootElement = ({ element }) => (
-//     <>
-//         <ThemeProvider theme={theme}>
-//             <GlobalStyle />
-//             <Layout>{element}</Layout>
-//         </ThemeProvider>
-//     </>
-// );
+// export const wrapRootElement = wrap;

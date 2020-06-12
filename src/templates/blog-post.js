@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout';
 
-import { StyledBlogPost, BlogContent, Date } from './BlogPost.styled';
+import { StyledBlogPost, BlogContent, Date } from '../react/portfolio-site/BlogPost.styled';
 
 const Template = ({ data, location, pathContext }) => {
     const { markdownRemark: post } = data;

@@ -5,9 +5,8 @@ import BlogPostPreview from './BlogPostPreview';
 import { StyledBlog, BlogContainer, BlogPosts, Author, AuthorImage, AuthorBlurb, Month } from './Blog.styled';
 
 class Blog extends React.Component {
+    
     render() {
-        const { edges: posts } = this.props.data.allMarkdownRemark;
-
         return(
             <StyledBlog>
                 <BlogContainer>
@@ -24,13 +23,7 @@ class Blog extends React.Component {
                     </Author>
                     {/* <Month>May Posts</Month> */}
                 <BlogPosts>
-                    {posts.map(({ node: post }) => {
-                        const { frontmatter } = post;
-                        
-                        return (
-                            <BlogPostPreview frontmatter={frontmatter} />
-                        );
-                    })}
+                    {this.props.blogposts}
                 </BlogPosts>
 
                 </BlogContainer>

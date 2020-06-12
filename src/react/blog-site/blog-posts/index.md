@@ -2,8 +2,6 @@
 
 path: '/blog-posts'
 
-category: 'Development'
-
 date: '2020-05-01T12:00:00+00:00'
 
 title: "My experience at a tech bootcamp"

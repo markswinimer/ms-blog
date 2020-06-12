@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Portfolio from './portfolio-site/Portfolio';
+import Portfolio from '../react/portfolio-site/Portfolio';
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;

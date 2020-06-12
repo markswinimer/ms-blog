@@ -199,8 +199,7 @@ export const Learning = styled.div`
   flex-direction: row;
   vertical-align: middle;
   justify-content: center;
-    vertical-align: middle;
-  // padding: $contentPadding;
+  vertical-align: middle;
   margin: auto;
   flex-direction: row;
   justify-content: center;

@@ -6,7 +6,7 @@ export const theme = {
         maxWidth: "1000px",
         defaultPadding: "1rem",
         contentPadding: "2.5rem"
-    }, 
+    },
     color: {
         navy: '#2a363b',
         white: '#fafafa'
@@ -59,3 +59,4 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: bold;
     }
 `
+export default GlobalStyle;
