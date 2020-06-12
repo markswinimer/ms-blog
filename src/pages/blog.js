@@ -1,9 +1,12 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 import Layout from '../components/layout';
 import Blog from '../react/blog-site/Blog';
 
 const BlogPage = ({ data }) => {
+  const { edges: posts } = data.allMarkdownRemark;
+
     const blogposts = posts.map(({ node: post }) => {
       const { frontmatter } = post;
       return (

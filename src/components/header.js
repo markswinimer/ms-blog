@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import Nav from '../pages/portfolio-site/Nav';
+import Nav from '../react/portfolio-site/Nav';
 
 const Header = ({ siteTitle }) => (
   <header>
