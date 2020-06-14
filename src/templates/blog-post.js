@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import Layout from '../components/layout';
 
-import { StyledBlogPost, BlogContent, Date } from '../react/portfolio-site/BlogPost.styled';
+import { StyledBlogPost, BlogContent, Date, PostContent } from '../sites/portfolio-site/BlogPost.styled';
 
 const Template = ({ data, location, pathContext }) => {
     const { markdownRemark: post } = data;
@@ -19,7 +19,10 @@ const Template = ({ data, location, pathContext }) => {
           <BlogContent>
               <h2>{title}</h2>
               <Date>{date}</Date>
-              <div dangerouslySetInnerHTML={{ __html: html }} />
+              <PostContent>
+                <div dangerouslySetInnerHTML={{ __html: html }} />
+              </PostContent>
+
               <p>
                   {prev &&
                       <Link to={prev.frontmatter.path}>

@@ -11,7 +11,6 @@ class BlogPostPreview extends React.Component {
         
         return(
             <StyledBlogPostPreview>
-                {/* <h4>{frontmatter.category.toUpperCase()}</h4> */}
                 <h2>
                     <Link to={frontmatter.path}>
                         {frontmatter.title}

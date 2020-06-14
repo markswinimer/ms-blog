@@ -37,7 +37,9 @@ module.exports = {
           `Abril Fatface`,
           `Oleo Script`,
           `Signika`,
-          `Nunito\:300,400,500,700`
+          `Nunito\:300,400,500,700`,
+          `Barlow\:300,400,500,600,700`,
+          `PT Sans Narrow\:400,700`
         ],
         display: 'swap'
       }

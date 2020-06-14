@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const StyledBlogPostPreview = styled.div`
+export const BlogPostPreview = styled.div`
     margin-top: 2em;
+
 
     h2 {
         margin-top: .25em;
@@ -14,15 +15,22 @@ export const StyledBlogPostPreview = styled.div`
     }
 `
 
+export const Category = styled.h3`
+    font-weight: 300;
+    font-size: 12px;
+    color: #EB6841;
+`
+
 export const Date = styled.h3`
     margin-top: .5em;
-    color: #5e9516;
     font-size: 15px;
-    font-weight: 400;
+    font-style: italic;
+    h3 {
+        color: #EB6841;
+    }
 `
 
 export const Excerpt = styled.p`
-    color: #989898;
     line-height: 20px;
-    margin-top: .5em;
+    margin-top: .6em;
 `

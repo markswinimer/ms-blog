@@ -2,23 +2,25 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import Layout from '../components/layout';
-import Blog from '../react/blog-site/Blog';
+import Blog from '../sites/blog-site/Blog';
+import { BlogPostPreview, Category, Date, Excerpt } from '../sites/blog-site/BlogPostPreview.styled';
 
 const BlogPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
-
+  
     const blogposts = posts.map(({ node: post }) => {
       const { frontmatter } = post;
       return (
-        <div>
+        <BlogPostPreview>
+          <Category>DEVELOPMENT</Category>
           <h2>
             <Link to={frontmatter.path}>
               {frontmatter.title}
             </Link>
           </h2>
-          <p>{frontmatter.date}</p>
-          <p>{frontmatter.excerpt}</p>
-        </div>
+          <Date>{frontmatter.date}</Date>
+          <Excerpt>{frontmatter.excerpt}</Excerpt>
+        </BlogPostPreview>
       );
     })
 
