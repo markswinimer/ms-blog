@@ -62,13 +62,19 @@ export const Title = styled.div`
     padding-top: 5.5rem;
 
     @media (max-width: ${props => props.theme.screen.mobile}) {
+        text-align: left;
         padding: 0 1.5em;
         padding-top: 1em;
+        padding-bottom: 4em;
+        vertical-align: top;
+        justify-content: flex-start;
+        align-items:flex-start;
+        height: 100%;
     }
 `
 
 export const TitleName = styled.div`
-  margin-top: 1rem;
+  margin-top: 1em;
   color: ${props => props.theme.color.navy};
 
   h1 {
@@ -86,12 +92,13 @@ export const TitleAbout = styled.div`
     margin: auto;
     color: ${props => props.theme.color.navy};
     max-width: 700px;
-    margin-top: 3rem;
+    margin-top: 3em;
     font-family: ${props => props.theme.font.subheader};
     font-size: 1.7rem;
     font-size: 1.25rem;
 
-    @media (max-width: 700) {
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        margin: 0;
         margin-top: 1rem;
     }
 `
