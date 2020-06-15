@@ -4,6 +4,10 @@ export const StyledNav = styled.div`
   padding: ${props => props.theme.screen.contentPadding};
   border: .5em solid ${props => props.theme.color.navy};
   border-bottom: none;
+
+  @media (max-width: ${props => props.theme.screen.mobile}) {
+      padding: 1.5em;
+  }
 `
 
 export const NavContainer = styled.div`
@@ -11,6 +15,7 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   max-width: ${props => props.theme.screen.maxWidth};
+  
   a {
     margin-right: auto;
   }

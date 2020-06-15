@@ -42,8 +42,4 @@ export const MenuLink = styled(Link)`
     transition: .1s ease-in;
     border-bottom: 1px solid ${props => props.theme.color.navy};
     cursor: pointer;
-    
-    :hover {
-        color: red;
-    }
 `

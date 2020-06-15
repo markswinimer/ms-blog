@@ -41,7 +41,8 @@ export const Section = styled.div`
     }
 
     @media (max-width: ${props => props.theme.screen.mobile}) {
-      padding: 3em 1.5em;
+      padding: 4em 1.5em;
+      text-align: left;
     }
 `
 //#region Title Section
@@ -179,13 +180,17 @@ export const ContactMe = styled(Section)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 9rem 2.5rem;
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+    align-items: flex-start;
+    }
 `
 
 export const Paragraph = styled.div`
     max-width: 700px;
     margin-top: 2em;
-
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+      margin-top: 0;
+    }
 `
 
 export const ContactMeButton = styled.div`
@@ -209,6 +214,11 @@ export const ContactMeButton = styled.div`
       background-color: ${props => props.theme.color.navy};
       border: 1px solid ${props => props.theme.color.white};
   }
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+      max-width: 50%; 
+      margin: 0;
+      margin-top: 1em;
+    }
 `
 //#endregion
 
@@ -229,7 +239,7 @@ export const Learning = styled.div`
   padding: 9rem 2.5rem;
 
       @media (max-width: ${props => props.theme.screen.mobile}) {
-        padding: 3em 1.5em;
+        padding: 4em 1.5em;
         flex-direction: column;
     }
 `
@@ -286,6 +296,9 @@ export const LearningLeftSection = styled.div`
 `
 export const LearningRightSection = styled.div`
   flex-grow: auto;
-  max-width: 500px;
+  max-width: 800px;
+      @media (max-width: ${props => props.theme.screen.mobile}) {
+        max-width: 100%;
+    }
 `
 //#endregion

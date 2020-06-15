@@ -1,24 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledBurger = styled.div`
-
-    @media (max-width: ${props => props.theme.screen.mobile}) {
-        display: ${props => props.display ? 'none' : 'flex'};
-        }   
-
-    position: absolute;
-    top: 3.5em;
-    right: 3em;
+    /* position: absolute; */
     display: ${props => props.display ? 'flex' : 'none'};
     flex-direction: column;
     justify-content: space-around;
+    align-self: center;
     width: 3em;
     height: 3em;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
-    z-index: 10;
 
     &:focus {
         outline: none;
@@ -34,7 +26,7 @@ export const StyledBurger = styled.div`
         background: ${props => props.theme.color.navy};
 
     }
-        @media (max-width: ${({ theme }) => theme.mobile}) {
-            display: flex;
-        }
+       @media (max-width: ${props => props.theme.screen.mobile}) {
+            display: ${props => props.display ? 'none' : 'flex'};
+        }  
 `

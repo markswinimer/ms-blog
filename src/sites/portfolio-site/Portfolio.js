@@ -48,13 +48,13 @@ class Portfolio extends React.Component {
                 <Divider topColor="white" />
 
                 <Learning>
-                        <LearningLeftSection>
+                        {/* <LearningLeftSection>
                             <p>React</p>
                             <p>ES6 Javascript</p>
                             <p>Node</p>
                             <p>Ruby on Rails</p>
                             <p>WordPress</p>
-                        </LearningLeftSection>
+                        </LearningLeftSection> */}
                         <LearningRightSection>
                             <h1>What I'm learning</h1>
                             <h2>New technologies</h2>

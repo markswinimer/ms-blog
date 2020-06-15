@@ -26,7 +26,7 @@ p {
     margin-top: .5em;
 }
     @media (max-width: ${props => props.theme.screen.mobile}) {
-        padding: 3em 1.5em;
+        padding: 4em 1.5em;
     }
 `
 
@@ -61,7 +61,7 @@ export const ProjectCard = styled.div`
 
     :nth-child(even) {
         margin-left: 2rem;
-        @media (max-width: ${props => props.theme.screen.mobile}) {
+        @media (max-width: 706px) {
             margin-left: 0;
         }
     }
@@ -78,6 +78,7 @@ export const ProjectCard = styled.div`
 
     @media (max-width: ${props => props.theme.screen.mobile}) {
         padding: 3em 1.5em;
+        width: 100%;
     }
 `
 
