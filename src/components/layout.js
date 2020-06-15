@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle="Mark Swinimer" />
           <main>{children}</main>
         <Footer/>
       <GlobalStyle />
