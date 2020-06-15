@@ -4,7 +4,7 @@ path: '/blog-posts'
 
 date: '2020-05-01T12:00:00+00:00'
 
-title: "Creating this portfolio and blog site using Gatsby"
+title: "Protesting Donald Trump"
 
 tags: ["dev", "II", "Boston"]
 

@@ -36,10 +36,10 @@ module.exports = {
         fonts: [
           `Abril Fatface`,
           `Oleo Script`,
-          `Signika`,
           `Nunito\:300,400,500,700`,
           `Barlow\:300,400,500,600,700`,
-          `PT Sans Narrow\:400,700`
+          `PT Sans Narrow\:400,700`,
+          `Frank Ruhl Libre\:300,400,500,700,900`
         ],
         display: 'swap'
       }

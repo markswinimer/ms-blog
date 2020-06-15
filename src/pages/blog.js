@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 import Layout from '../components/layout';
 import Blog from '../sites/blog-site/Blog';
-import { BlogPostPreview, Category, Date, Excerpt } from '../sites/blog-site/BlogPostPreview.styled';
+import { BlogPostPreview, Category, Date, Excerpt, ReadMore } from '../sites/blog-site/BlogPostPreview.styled';
 
 const BlogPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
       const { frontmatter } = post;
       return (
         <BlogPostPreview>
-          <Category>DEVELOPMENT</Category>
+          {/* <Category>DEVELOPMENT</Category> */}
           <h2>
             <Link to={frontmatter.path}>
               {frontmatter.title}
@@ -20,6 +20,11 @@ const BlogPage = ({ data }) => {
           </h2>
           <Date>{frontmatter.date}</Date>
           <Excerpt>{frontmatter.excerpt}</Excerpt>
+          <ReadMore>
+            <Link to={frontmatter.path}>
+              read more
+            </Link>
+          </ReadMore>
         </BlogPostPreview>
       );
     })

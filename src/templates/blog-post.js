@@ -18,7 +18,7 @@ const Template = ({ data, location, pathContext }) => {
         <StyledBlogPost>
           <BlogContent>
               <h2>{title}</h2>
-              <Date>{date}</Date>
+          <Date><strong>Mark Swinimer</strong> {date}</Date>
               <PostContent>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </PostContent>

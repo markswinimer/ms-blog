@@ -10,29 +10,14 @@ export const StyledBlogPost = styled.div`
 export const BlogContent = styled.div`
     margin: auto;
     padding: 3em 3em;
-    padding-top: 3.5em;
-
+    padding-top: 1.5em;
+    
     max-width: ${props => props.theme.screen.maxWidth};
 
-
     h2 {
-       font-size: 29px; 
-       font-weight: 700;
-       font-family: "PT Sans Narrow";
-    }
-    h4 {
-        color: #EB6841;
-        font-size: 15px;
-        font-weight: 400;
-    }
-`
-
-export const BlogPostPreview = styled.div`
-    margin-top: 2em;
-
-    h2 {
-        margin-top: .25em;
-        font-size: 24px;
+       font-size: 33px; 
+       font-weight: 400;
+       font-family: "Frank Ruhl Libre";
     }
     h4 {
         color: #EB6841;
@@ -47,28 +32,38 @@ export const Category = styled.h3`
 `
 
 export const Date = styled.h3`
-    margin-top: .5em;
     font-size: 15px;
     font-style: italic;
-    h3 {
-        color: #EB6841;
+    font-family: "Barlow";
+    margin-left: 1em;
+    margin-top: 1em;
+
+    strong {
+        font-style: normal;
+        margin-right: .5em;
+        font-weight: 600;
     }
 `
 export const PostContent = styled.div`
-    margin-top: 1em;
+    max-width: 750px;
 
     h2 {
-        font-family: ${props => props.theme.font.subheader};
-        font-size: 22px;
         font-weight: 700;
-        margin-top: 2em;
+        font-family: "PT Sans Narrow";
+        font-size: 26px;
+        margin-top: 1.5em;
     }
-
+        h2:last-child {
+        margin-bottom: 0em;
+    }
     p {
-        /* line-height: 20px; */
-        margin-top: 1em;
+        /* line-height: 29px; */
+        margin-bottom: 1em;
         font-size: 20px;
         font-family: "Barlow";
         font-weight: 300;
+    }
+    p:first-of-type {
+        margin-top: 1em;
     }
 `

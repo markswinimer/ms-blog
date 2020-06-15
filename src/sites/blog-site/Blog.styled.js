@@ -4,46 +4,68 @@ export const StyledBlog = styled.div`
     border: .5em solid ${props => props.theme.color.navy};
     border-bottom: none;
     border-top: none;
-    min-height: 100vh;
     color: ${props => props.theme.color.navy};
+    margin: auto;
+    padding: 3em;
     padding-top: 1em;
+    min-height: 100vh;
 
     h1 {
         font-size: 40px;
         letter-spacing: 1.5px;
-       font-family: "PT Sans Narrow";
-       font-weight: 700;
+       font-family: "Frank Ruhl Libre";
+       font-weight: 400;
 
+    }
+
+    h2 {
+       font-size: 30px; 
+       font-weight: 700;
+    }
+
+    h3 {
+        margin-top: .5em;
+        font-family: "Barlow";
+
+    }
+    h1 {
+        font-size: 35px;
     }
 
     h2 {
        font-size: 29px; 
        font-weight: 700;
+       font-family: "PT Sans Narrow";
     }
 
     h3 {
         margin-top: .5em;
     }
 `
+export const BlogContainer = styled.div`
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+`
 export const IntroSectionContainer = styled.div`
-      /* color: ${props => props.theme.color.white};
-      background-color: ${props => props.theme.color.navy}; */
-      padding: 1em;
+    /* color: ${props => props.theme.color.white};
+    background-color: ${props => props.theme.color.navy}; */
+    max-width: 750px;
+    border-bottom: 1px solid ${props => props.theme.color.navy};
+    padding-bottom: 1.5em;
 `
 export const IntroSection = styled.div`
-    margin: auto;
-    max-width: ${props => props.theme.screen.maxWidth};
-          color: ${props => props.theme.color.white};
-      background-color: ${props => props.theme.color.navy};
-      padding: 2em;
+    /* color: ${props => props.theme.color.white}; */
+    max-width: 750px;
+
 `
 
-export const BlogContainer = styled.div`
-    margin: auto;
-    padding: 3em 3em;
+export const PageContent = styled.div`
     padding-top: 0em;
-
-    max-width: ${props => props.theme.screen.maxWidth};
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 35px;
@@ -69,7 +91,9 @@ export const Month = styled.div`
     max-width: 850px;
 `
 export const BlogPosts = styled.div`
-
+    max-width: 750px;
+    border-bottom: 1px solid ${props => props.theme.color.navy};
+    padding-bottom: 1.5em;
 `
 
 export const Intro = styled.div`
@@ -81,7 +105,7 @@ export const Intro = styled.div`
     margin-top: 1em;
     /* padding: .75em 0em; */
     border-radius: 3px;
-    color: ${props => props.theme.color.white};
+    /* color: ${props => props.theme.color.white}; */
     /* background-color: #f5f5f5; */
     
 `
@@ -122,6 +146,8 @@ export const AuthorBlurb = styled.div`
     }
 
     p {
+        font-family: "Barlow";
+
         line-height: 20px;
     }
 `
@@ -129,27 +155,32 @@ export const AuthorBlurb = styled.div`
 export const Footer = styled.div`
     display: flex;
     flex-direction: column;
-    border-top: 1px solid ${props => props.theme.color.navy};
-    max-width: 800px;
-    margin-top: 3em;
-    padding-top: 3em;
+    /* border-top: 1px solid ${props => props.theme.color.navy}; */
+    max-width: 750px;
 
     h2 {
-        color: #EB6841;
+        /* color: #EB6841; */
+        font-size: 23px;
     }
 
+    /* flex-direction: row; */
+    /* border: 1px solid ${props => props.theme.color.navy}; */
+    padding: 1em;
+    margin-top: 3em;
+
+    background-color: #f5f5f5;
+    /* margin-top: auto; */
 `
 
 export const Author = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
     /* border: 1px solid ${props => props.theme.color.navy}; */
     overflow: hidden;
-    max-width: 800px;
-    margin-top: 1em;
-    padding: .75em 1em;
-    border-radius: 3px;
-    background-color: #f5f5f5;
+    h2 {
+        
+    }
 `
 export const ReadMore = styled.div`
     display: flex;
@@ -157,7 +188,7 @@ export const ReadMore = styled.div`
     padding: .75em 1em;
     border-radius: 3px;
     background-color: #f5f5f5;
-    margin-top: 1em;
+    margin-top: .5em;
 
     h2 {
         font-size: 20px;
@@ -167,9 +198,4 @@ export const ReadMore = styled.div`
     p {
         line-height: 20px;
     }
-`
-
-
-export const Spacing = styled.div`
-    margin-top: 10em;
 `
