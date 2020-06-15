@@ -5,7 +5,8 @@ export const theme = {
     screen: {
         maxWidth: "1000px",
         defaultPadding: "1rem",
-        contentPadding: "2.5rem"
+        contentPadding: "2.5rem",
+        mobile: "800px"
     },
     color: {
         navy: '#2a363b',

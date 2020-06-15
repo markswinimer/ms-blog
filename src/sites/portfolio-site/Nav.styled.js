@@ -49,4 +49,7 @@ export const NavLinks = styled.div`
     font-weight: 700;
 
   }
+  @media (max-width: ${props => props.theme.screen.mobile}) {
+      display: none;
+  }
 `
