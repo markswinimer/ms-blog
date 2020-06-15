@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledPortfolio = styled.div`
   border: .5em solid ${props => props.theme.color.navy};
   border-top: none;
-
+  
   h1 {
     font-size: 40px;
   }
@@ -26,7 +26,7 @@ export const StyledPortfolio = styled.div`
 
 export const Section = styled.div`
     display: flex;
-    padding: 9rem 2.5rem;
+    padding: 9em 2.5em;
     background-color: ${props => props.theme.color.white};
     color: ${props => props.theme.color.navy};
 
@@ -39,6 +39,10 @@ export const Section = styled.div`
        font-size: 19px;
        font-weight: 300;
     }
+
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+      padding: 3em 1.5em;
+    }
 `
 //#region Title Section
 export const Title = styled.div`
@@ -48,16 +52,17 @@ export const Title = styled.div`
     margin: auto;
     max-width: ${props => props.theme.screen.maxWidth};
     padding: ${props => props.theme.screen.defaultPadding} + 2em;
-    padding-top: 5.5rem;
     display: flex;
     justify-content: center;
     align-items:center;
     vertical-align: middle;
     flex-direction: column;
+    padding: 0 2em;
+    padding-top: 5.5rem;
 
-    @media (max-width: 700) {
-        text-align: left;
-        align-items:baseline;
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        padding: 0 1.5em;
+        padding-top: 1em;
     }
 `
 
@@ -100,6 +105,10 @@ export const AboutMe = styled(Section)`
   flex-direction: row;
   vertical-align: middle;
   justify-content: center;
+
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+      flex-direction: column;
+    }
 `
 
 export const LeftSection = styled.div`
@@ -107,6 +116,10 @@ export const LeftSection = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  
+      @media (max-width: ${props => props.theme.screen.mobile}) {
+      flex-direction: column;
+    }
 `
 export const AboutMeProfileImage = styled.div`
   overflow: hidden;
@@ -119,7 +132,6 @@ export const AboutMeProfileImage = styled.div`
   filter: hue-rotate(0deg) grayscale(.5) brightness(1);
   
   img {
-    // max-width: 50%;
     width: 150px;
     flex-shrink: none;
     transition: .2s;
@@ -128,6 +140,11 @@ export const AboutMeProfileImage = styled.div`
   :hover {
     filter: hue-rotate(120deg) grayscale(.3) brightness(1.2);
   }
+      @media (max-width: ${props => props.theme.screen.mobile}) {
+        margin: 0;
+        margin: auto;
+        /* border-radius: 50%; */
+      }
 `
 
 export const RightSection = styled.div`
@@ -146,6 +163,11 @@ export const RightSection = styled.div`
        margin-top: 15px;
        font-size: 19px;
        font-weight: 300;
+    }
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+      margin-top: 2em;
+      max-width: 100%;
+      /* text-align: center; */
     }
 `
 //#endregion
@@ -205,6 +227,38 @@ export const Learning = styled.div`
   justify-content: center;
   vertical-align: middle;
   padding: 9rem 2.5rem;
+
+      @media (max-width: ${props => props.theme.screen.mobile}) {
+        padding: 3em 1.5em;
+        flex-direction: column;
+    }
+`
+
+export const LearningMediaQ = styled.ul`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 6px solid white;
+  border-radius: 2px;
+  margin-top: 2em;
+  padding: .5em 1em;
+  padding-bottom: 1em;
+  flex-basis: 1;
+  align-self: flex-start;
+
+  li {
+    color: ${props => props.theme.color.white};
+    margin: none;
+    padding: none;
+    margin-top: .25em;
+    font-size: 1.1rem;
+  }
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        display: flex;
+    }
 `
 export const LearningLeftSection = styled.div`
   display: flex;
@@ -226,7 +280,9 @@ export const LearningLeftSection = styled.div`
     margin-top: .25em;
     font-size: 1.1rem;
   }
-
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        display: none;
+    }
 `
 export const LearningRightSection = styled.div`
   flex-grow: auto;

@@ -6,7 +6,7 @@ import Projects from './Projects';
 import { StyledPortfolio, Title, TitleName, TitleAbout,
     AboutMe, LeftSection, RightSection, AboutMeProfileImage,
     ContactMe, ContactMeButton, Paragraph,
-    Learning, LearningLeftSection, LearningRightSection } from './Portfolio.styled';
+    Learning, LearningLeftSection, LearningRightSection, LearningMediaQ } from './Portfolio.styled';
 
 class Portfolio extends React.Component {
     render() {
@@ -60,13 +60,13 @@ class Portfolio extends React.Component {
                             <h2>New technologies</h2>
                             
                             <p>I have been familiarizing myself with React and exploring news ways to utilize this libray. New javascript technologies like Gatsby and Node applications have been fascinating to jump into.</p>
-                            <ul className="Content-tech-media">
+                            <LearningMediaQ>
                                 <li>React</li>
                                 <li>ES6 Javascrilit</li>
                                 <li>Node</li>
                                 <li>Ruby on Rails</li>
                                 <li>WordPress</li>
-                            </ul>
+                            </LearningMediaQ>
                         </LearningRightSection>
                 </Learning>
 

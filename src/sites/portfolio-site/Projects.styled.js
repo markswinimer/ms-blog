@@ -25,6 +25,9 @@ h2 {
 p {
     margin-top: .5em;
 }
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        padding: 3em 1.5em;
+    }
 `
 
 export const ProjectCard = styled.div`
@@ -58,6 +61,9 @@ export const ProjectCard = styled.div`
 
     :nth-child(even) {
         margin-left: 2rem;
+        @media (max-width: ${props => props.theme.screen.mobile}) {
+            margin-left: 0;
+        }
     }
 
 
@@ -68,6 +74,10 @@ export const ProjectCard = styled.div`
         .icon {
             color: ${props => props.theme.color.white};
         }
+    }
+
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        padding: 3em 1.5em;
     }
 `
 
@@ -103,5 +113,4 @@ export const ProjectsGrid = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 2rem;
 `
