@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const StyledPortfolio = styled.div`
   border: .5em solid ${props => props.theme.color.navy};
   border-top: none;
+  max-width: 100vw;
   
   h1 {
     font-size: 40px;
@@ -83,6 +84,7 @@ export const TitleName = styled.div`
     margin: auto;
   }
   h2 {
+    font-family: ${props => props.theme.font.subheaderAlt};
     margin-top: .5rem;
     font-size: 1.7rem;
   }
@@ -93,9 +95,10 @@ export const TitleAbout = styled.div`
     color: ${props => props.theme.color.navy};
     max-width: 700px;
     margin-top: 3em;
-    font-family: ${props => props.theme.font.subheader};
     font-size: 1.7rem;
     font-size: 1.25rem;
+    font-family: ${props => props.theme.font.subheaderAlt};
+    line-height: 30px;
 
     @media (max-width: ${props => props.theme.screen.mobile}) {
         margin: 0;
@@ -265,6 +268,7 @@ export const LearningMediaQ = styled.ul`
   padding-bottom: 1em;
   flex-basis: 1;
   align-self: flex-start;
+  /* max-width: 50%; */
 
   li {
     color: ${props => props.theme.color.white};
@@ -303,9 +307,10 @@ export const LearningLeftSection = styled.div`
 `
 export const LearningRightSection = styled.div`
   flex-grow: auto;
-  max-width: 800px;
-      @media (max-width: ${props => props.theme.screen.mobile}) {
-        max-width: 100%;
-    }
+  max-width: 725px;
+  
+  @media (max-width: ${props => props.theme.screen.mobile}) {
+      max-width: 100%;
+  }
 `
 //#endregion

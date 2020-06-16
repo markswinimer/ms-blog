@@ -17,7 +17,7 @@ class BlogPostPreview extends React.Component {
                     </Link>
                 </h2>
                 <Date>{frontmatter.date}</Date>
-                <Excerpt>{frontmatter.excerpt}</Excerpt>
+                <Link to={frontmatter.path}><Excerpt>{frontmatter.excerpt}</Excerpt></Link>
                 {/* <ul>
                     {frontmatter.tags.map(tag => {
                         return (

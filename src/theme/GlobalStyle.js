@@ -14,8 +14,9 @@ export const theme = {
     },
     font: {
         header: "Oleo Script, Display",
-        subheader: "Nunito, Display",
-        copy: "Nunito, Display"
+        subheader: "PT Sans Narrow, Display",
+        subheaderAlt: "Nunito, Display",
+        copy: "Barlow, Display"
     }
 };
 

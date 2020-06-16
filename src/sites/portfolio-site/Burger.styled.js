@@ -11,7 +11,8 @@ export const StyledBurger = styled.div`
     background: transparent;
     border: none;
     cursor: pointer;
-
+    margin-left: auto;
+    
     &:focus {
         outline: none;
     }
@@ -26,7 +27,8 @@ export const StyledBurger = styled.div`
         background: ${props => props.theme.color.navy};
 
     }
-       @media (max-width: ${props => props.theme.screen.mobile}) {
-            display: ${props => props.display ? 'none' : 'flex'};
-        }  
+
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        display: ${props => props.display ? 'none' : 'flex'};
+    }  
 `

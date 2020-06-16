@@ -45,8 +45,7 @@ export const Excerpt = styled.p`
 `
 export const ReadMore = styled.h3`
     font-family: "Barlow";
-    /* margin-top: 0; */
     font-weight: 400;
     margin-right: auto;
-    border-bottom: 2px solid ${props => props.theme.color.navy};
+    border-bottom: 1px solid ${props => props.theme.color.navy};
 `

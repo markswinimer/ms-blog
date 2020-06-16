@@ -15,10 +15,6 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   max-width: ${props => props.theme.screen.maxWidth};
-  
-  a {
-    margin-right: auto;
-  }
 `
 
 export const NavLogo = styled.div`
@@ -36,21 +32,21 @@ export const NavLogo = styled.div`
 
 export const NavLinks = styled.div`
   margin-top: auto;
+  margin-left: auto;
+
   a {
     text-decoration: none;
     color: ${props => props.theme.color.navy};
     font-family: ${props => props.theme.font.subheader};
     font-weight: 500;
     font-size: 1.2rem;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     border-bottom: 1px solid  ${props => props.theme.color.navy};
     padding-bottom: .1rem;
     transition: .2s ease-in;
   }
 
   a:hover {
-    // border-bottom: 2px solid  ${props => props.theme.color.navy};
-    letter-spacing: .5px;
     font-weight: 700;
 
   }

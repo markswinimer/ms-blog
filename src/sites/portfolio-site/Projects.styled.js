@@ -30,11 +30,22 @@ p {
     }
 `
 
+export const ProjectCardPlaceholder = styled.div`
+    flex: 1;
+    padding: 1.5em;
+    margin-top: 2em;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: .45rem;
+    margin-left: 2em;
+`
+
 export const ProjectCard = styled.div`
     flex: 1;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 1.5em;
+    margin-top: 2em;
     min-height: 200px;
+    min-width: 200px;
     justify-content: space-between;
     color: ${props => props.theme.color.navy};
     background-color: ${props => props.theme.color.white};
@@ -54,6 +65,7 @@ export const ProjectCard = styled.div`
     h2 {
         font-weight: 700;
         // font-size: 1.75rem;
+        margin-top: 0;
     }
     h4 {
         font-size: 1.2rem;
@@ -85,12 +97,25 @@ export const ProjectCard = styled.div`
 export const ProjectCardTags = styled.div`
     display: flex;
     flex-direction: row;
+    /* margin-right: auto; */
+
+    h4 {
+        margin-top: .75em;
+        font-weight: 500;
+        /* font-size: 1em; */
+        margin-right: 1em;
+    }
+`
+
+export const ProjectCardBottomRightTag = styled.div`
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
 
     h4 {
-        font-weight: 400;
-        font-size: 1rem;
-        margin-left: 1rem;
+        font-weight: 500;
+        /* font-size: 1em; */
+        margin-right: 1em;
     }
 `
 
@@ -99,6 +124,7 @@ export const ProjectCardLinks = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    vertical-align: center;
     padding-top: 1rem;
 
     .icon {

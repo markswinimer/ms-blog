@@ -7,7 +7,7 @@ export const MenuContainer = styled.div`
     padding-top: 4em;
     display: ${props => props.open ? "flex" : "none"};
     position: absolute;
-    right: 3em;
+    right: 2em;
 `
 
 export const StyledMenu = styled.div`
@@ -20,7 +20,7 @@ export const StyledMenu = styled.div`
     margin-left: auto;
 
     a {
-        margin-right: 0;
+        /* margin-right: 0; */
     }
     a:last-of-type {
         border-bottom: none;

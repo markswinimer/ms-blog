@@ -15,8 +15,8 @@ class Blog extends React.Component {
 
                     <IntroSectionContainer>
                         <IntroSection>
-                            <h1>Development, my thoughts and experiences</h1>
-                            <h3>by Mark Swinimer</h3>
+                            <h1>Web Development and Design</h1>
+                            <h3>a blog by Mark Swinimer</h3>
                             <Intro>
                                 <IntroBlurb>
                                     <p></p>

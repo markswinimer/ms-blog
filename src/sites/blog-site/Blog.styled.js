@@ -9,6 +9,7 @@ export const StyledBlog = styled.div`
     padding: 3em;
     padding-top: 1em;
     min-height: 100vh;
+    max-width: 100vw;
 
     h1 {
         font-size: 40px;
@@ -41,6 +42,10 @@ export const StyledBlog = styled.div`
     h3 {
         margin-top: .5em;
     }
+
+    @media (max-width: ${props => props.theme.screen.mobile}) {
+        padding: 1.5em;
+    }  
 `
 export const BlogContainer = styled.div`
     max-width: 1000px;
@@ -93,7 +98,6 @@ export const Month = styled.div`
 export const BlogPosts = styled.div`
     max-width: 750px;
     border-bottom: 1px solid ${props => props.theme.color.navy};
-    padding-bottom: 1.5em;
 `
 
 export const Intro = styled.div`
@@ -166,7 +170,7 @@ export const Footer = styled.div`
     /* flex-direction: row; */
     /* border: 1px solid ${props => props.theme.color.navy}; */
     padding: 1em;
-    margin-top: 3em;
+    margin-top: 2em;
 
     background-color: #f5f5f5;
     /* margin-top: auto; */

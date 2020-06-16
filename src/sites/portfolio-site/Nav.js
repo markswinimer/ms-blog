@@ -30,7 +30,6 @@ export default class Nav extends React.Component {
                     </Link>
                     <NavLinks>
                         <Link to={"/blog"}>blog</Link>
-                        <a href="mailto:markswinimer@gmail.com">contact me</a>
                         <a href="https://www.linkedin.com/in/markswinimer/">linkedin</a>
                         <a href="https://github.com/markswinimer">github</a>
                     </NavLinks>

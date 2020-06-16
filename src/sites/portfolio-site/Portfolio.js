@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
                             Nice to meet you! I'm Mark and I create web applications and implement web  based solutions. Also, I love Dogs.
                         </p>
                         <p>
-                            I have an interest in full stack development; especially using the technologies: Ruby, Javascript, React and other front end libraries which make creating web applications smoother and progressive.
+                            I have an interest and passion for full stack web development. I'm pursuing the latest javascript libraries and have been diving in via a host of personal projects. Development with modern component-base libraries, Node, and frameworks like Ruby on Rails have reshaped my idea of web development.
                         </p>
                     </RightSection>
                 </AboutMe>
@@ -57,13 +57,13 @@ class Portfolio extends React.Component {
                         </LearningLeftSection> */}
                         <LearningRightSection>
                             <h1>What I'm learning</h1>
-                            <h2>New technologies</h2>
-                            
-                            <p>I have been familiarizing myself with React and exploring news ways to utilize this libray. New javascript technologies like Gatsby and Node applications have been fascinating to jump into.</p>
+                            <p>Following and exploring new web technolgy is exciting. I've found myself creating numerous web apps to learn and experience these new technologies and libraries. Creating personal projects, learning via Udemy tutorials, and reading documentation has kept me up to date.</p>
+                            <p>Currently being used in my projects:</p>
                             <LearningMediaQ>
+                                <li>ES6 Javascript</li>
                                 <li>React</li>
-                                <li>ES6 Javascrilit</li>
                                 <li>Node</li>
+                                <li>Express</li>
                                 <li>Ruby on Rails</li>
                                 <li>WordPress</li>
                             </LearningMediaQ>
@@ -75,7 +75,7 @@ class Portfolio extends React.Component {
                 <ContactMe>
                     <h1>Contact me!</h1>
                     <Paragraph>
-                        <p>I'd love to share some of my work with you. Feel free to reach out via email or explore my work on github. I have also provided links to the live versions in the projects sections above. Local to Boston? I'm interested in meeting up with like-minded developers over coffee at a local cafe.</p>
+                        <p>I'd love to share some of my work with you. Feel free to reach out via email via markswinimer@gmail.com or explore my work on github. I have also provided links to the live versions in the projects sections above. Local to Boston? I'm interested in meeting up with like-minded developers over coffee at a local cafe.</p>
                             <a href="mailto:markswinimer@gmail.com">
                                 <ContactMeButton>
                                     Reach out

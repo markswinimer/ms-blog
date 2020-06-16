@@ -19,7 +19,7 @@ const BlogPage = ({ data }) => {
             </Link>
           </h2>
           <Date>{frontmatter.date}</Date>
-          <Excerpt>{frontmatter.excerpt}</Excerpt>
+          <Link to={frontmatter.path}><Excerpt>{frontmatter.excerpt}</Excerpt></Link>
           <ReadMore>
             <Link to={frontmatter.path}>
               read more
