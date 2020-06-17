@@ -1,6 +1,6 @@
 ---
 
-path: '/blog-posts'
+path: '/blog-posts/uie-landing-page-project-part-i'
 
 date: '2020-06-17'
 

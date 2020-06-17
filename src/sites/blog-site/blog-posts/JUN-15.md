@@ -1,6 +1,6 @@
 ---
 
-path: '/blog-posts'
+path: '/blog-posts/what-the-blog'
 
 date: '2020-06-15'
 
