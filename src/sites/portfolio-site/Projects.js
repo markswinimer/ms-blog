@@ -8,7 +8,7 @@ class Projects extends Component {
             <StyledProjects>
                 <h1>Projects</h1>
                 <p>What I'm working on.</p>
-                <p>The two projects I'm currently working on are <strong>Nerd Words</strong>, web app for creating and sharing Word Libraries, and my new <strong>personal blog</strong>! Nerd Words is a passion project of mine, and I've recently redesigned it using Node.js with mongoDB and express. I've wanted to start a blog for a long time now and used this opportunity to build my own using Gatsby.
+                <p>The two projects I'm currently working on are <strong>Nerd Words</strong>, web app for creating and sharing Word Libraries, and my new <strong>personal blog</strong>! Nerd Words is a passion project of mine, and I've recently redesigned it using Node.js with MongoDB and express. I've wanted to start a blog for a long time now and used this opportunity to build my own using Gatsby.
                 </p>
                 <ProjectsGrid>
 

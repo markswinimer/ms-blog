@@ -47,6 +47,11 @@ export const Date = styled.h3`
 export const PostContent = styled.div`
     max-width: 750px;
 
+    a {
+        font-weight: 500;
+        font-size: 19px;
+        border-bottom: 1px solid ${props => props.theme.color.navy};
+    }
     h2 {
         font-weight: 700;
         font-family: "PT Sans Narrow";
@@ -65,5 +70,24 @@ export const PostContent = styled.div`
     }
     p:first-of-type {
         margin-top: 1em;
+    }
+
+    ul {
+        padding-top: 0em;
+        font-size: 20px;
+        ul li:last-of-type {
+            margin-bottom: 1em;
+        }
+    }
+    li {
+        font-size: 20px;
+        padding-top: 0;
+        padding-left: .5em;
+        list-style: square;
+        margin-left: 2em;
+        p, p:first-of-type {
+            font-weight: 400;
+            margin: 0;
+        }
     }
 `

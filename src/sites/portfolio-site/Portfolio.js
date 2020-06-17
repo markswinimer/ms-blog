@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
                             Nice to meet you! I'm Mark and I create web applications and implement web  based solutions. Also, I love Dogs.
                         </p>
                         <p>
-                            I have an interest and passion for full stack web development. I'm pursuing the latest javascript libraries and have been diving in via a host of personal projects. Development with modern component-base libraries, Node, and frameworks like Ruby on Rails have reshaped my idea of web development.
+                            I have an interest and passion for full stack web development. I'm pursuing the latest Javascript libraries and have been diving in via a host of personal projects. Development with modern component-base libraries, Node, and frameworks like Ruby on Rails have reshaped my idea of web development.
                         </p>
                     </RightSection>
                 </AboutMe>
@@ -57,7 +57,7 @@ class Portfolio extends React.Component {
                         </LearningLeftSection> */}
                         <LearningRightSection>
                             <h1>What I'm learning</h1>
-                            <p>Following and exploring new web technolgy is exciting. I've found myself creating numerous web apps to learn and experience these new technologies and libraries. Creating personal projects, learning via Udemy tutorials, and reading documentation has kept me up to date.</p>
+                            <p>Following and exploring new web technology is exciting. I've found myself creating numerous web apps to learn and experience these new technologies and libraries. Creating personal projects, learning via Udemy tutorials, and reading documentation has kept me up to date.</p>
                             <p>Currently being used in my projects:</p>
                             <LearningMediaQ>
                                 <li>ES6 Javascript</li>
