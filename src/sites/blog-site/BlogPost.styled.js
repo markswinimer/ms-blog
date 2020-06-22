@@ -24,6 +24,8 @@ export const BlogContent = styled.div`
         font-size: 15px;
         font-weight: 400;
     }
+
+
 `
 
 export const Category = styled.h3`
@@ -56,20 +58,20 @@ export const PostContent = styled.div`
         font-weight: 700;
         font-family: "PT Sans Narrow";
         font-size: 26px;
-        margin-top: 1.5em;
     }
         h2:last-child {
         margin-bottom: 0em;
     }
     p {
         /* line-height: 29px; */
-        margin-bottom: 1em;
+        margin-bottom:1em;
         font-size: 20px;
         font-family: "Barlow";
         font-weight: 300;
     }
     p:first-of-type {
-        margin-top: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
     }
 
     ul {
@@ -78,6 +80,8 @@ export const PostContent = styled.div`
         ul li:last-of-type {
             margin-bottom: 1em;
         }
+        margin-bottom:1em;
+
     }
     li {
         font-size: 20px;
@@ -89,5 +93,16 @@ export const PostContent = styled.div`
             font-weight: 400;
             margin: 0;
         }
+    }
+    .img {
+        border: 2px solid ${props => props.theme.color.navy};
+        padding: 2px;
+        margin: 2em 2em 3em 2em;
+
+    }
+    .wide { 
+        overflow: hidden;
+        height: 200px;
+
     }
 `
