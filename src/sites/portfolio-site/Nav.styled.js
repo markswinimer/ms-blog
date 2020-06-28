@@ -4,6 +4,7 @@ export const StyledNav = styled.div`
   padding: ${props => props.theme.screen.contentPadding};
   border: .5em solid ${props => props.theme.color.navy};
   border-bottom: none;
+  background-color: ${props => props.theme.color.white};
 
   @media (max-width: ${props => props.theme.screen.mobile}) {
       padding: 1.5em;

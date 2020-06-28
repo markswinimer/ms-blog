@@ -41,11 +41,11 @@ class Portfolio extends React.Component {
                     </RightSection>
                 </AboutMe>
 
-                <Divider topColor="navy"/>
+                {/* <Divider topColor="navy"/> */}
 
                 <Projects/>
 
-                <Divider topColor="white" />
+                {/* <Divider topColor="white" /> */}
 
                 <Learning>
                         {/* <LearningLeftSection>

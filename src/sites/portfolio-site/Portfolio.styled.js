@@ -5,6 +5,7 @@ export const StyledPortfolio = styled.div`
   border: .5em solid ${props => props.theme.color.navy};
   border-top: none;
   max-width: 100vw;
+  background-color: ${props => props.theme.color.white};
   
   h1 {
     font-size: 40px;
@@ -61,6 +62,8 @@ export const Title = styled.div`
     flex-direction: column;
     padding: 0 2em;
     padding-top: 5.5rem;
+    padding-bottom: 2em;
+    background-color: ${props => props.theme.color.white};
 
     @media (max-width: ${props => props.theme.screen.mobile}) {
         text-align: left;
@@ -247,6 +250,7 @@ export const Learning = styled.div`
   justify-content: center;
   vertical-align: middle;
   padding: 9rem 2.5rem;
+  padding-bottom: 11em;
 
       @media (max-width: ${props => props.theme.screen.mobile}) {
         padding: 4em 1.5em;

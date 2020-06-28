@@ -11,7 +11,6 @@ export const BlogContent = styled.div`
     margin: auto;
     padding: 3em 3em;
     padding-top: 1.5em;
-    
     max-width: ${props => props.theme.screen.maxWidth};
 
     h2 {
@@ -24,8 +23,6 @@ export const BlogContent = styled.div`
         font-size: 15px;
         font-weight: 400;
     }
-
-
 `
 
 export const Category = styled.h3`
@@ -59,11 +56,10 @@ export const PostContent = styled.div`
         font-family: "PT Sans Narrow";
         font-size: 26px;
     }
-        h2:last-child {
+    h2:last-child {
         margin-bottom: 0em;
     }
     p {
-        /* line-height: 29px; */
         margin-bottom:1em;
         font-size: 20px;
         font-family: "Barlow";
@@ -73,15 +69,14 @@ export const PostContent = styled.div`
         margin-top: 1.5em;
         margin-bottom: 1em;
     }
-
     ul {
         padding-top: 0em;
         font-size: 20px;
+        margin-bottom:1em;
+
         ul li:last-of-type {
             margin-bottom: 1em;
         }
-        margin-bottom:1em;
-
     }
     li {
         font-size: 20px;
@@ -89,6 +84,7 @@ export const PostContent = styled.div`
         padding-left: .5em;
         list-style: square;
         margin-left: 2em;
+        
         p, p:first-of-type {
             font-weight: 400;
             margin: 0;
@@ -98,11 +94,9 @@ export const PostContent = styled.div`
         border: 2px solid ${props => props.theme.color.navy};
         padding: 2px;
         margin: 2em 2em 3em 2em;
-
     }
     .wide { 
         overflow: hidden;
         height: 200px;
-
     }
 `

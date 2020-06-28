@@ -16,7 +16,6 @@ export const StyledBurger = styled.div`
     &:focus {
         outline: none;
     }
-
     div {
         width: 3em;
         height: 0.315rem;
@@ -25,7 +24,6 @@ export const StyledBurger = styled.div`
         position: relative;
         transform-origin: 1px;
         background: ${props => props.theme.color.navy};
-
     }
 
     @media (max-width: ${props => props.theme.screen.mobile}) {

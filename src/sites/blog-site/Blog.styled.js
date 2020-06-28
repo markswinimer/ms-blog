@@ -16,14 +16,11 @@ export const StyledBlog = styled.div`
         letter-spacing: 1.5px;
        font-family: "Frank Ruhl Libre";
        font-weight: 400;
-
     }
-
     h2 {
        font-size: 30px; 
        font-weight: 700;
     }
-
     h3 {
         margin-top: .5em;
         font-family: "Barlow";
@@ -32,13 +29,11 @@ export const StyledBlog = styled.div`
     h1 {
         font-size: 35px;
     }
-
     h2 {
        font-size: 29px; 
        font-weight: 700;
        font-family: "PT Sans Narrow";
     }
-
     h3 {
         margin-top: .5em;
     }
@@ -55,18 +50,14 @@ export const BlogContainer = styled.div`
     margin: auto;
 `
 export const IntroSectionContainer = styled.div`
-    /* color: ${props => props.theme.color.white};
-    background-color: ${props => props.theme.color.navy}; */
     max-width: 750px;
     border-bottom: 1px solid ${props => props.theme.color.navy};
     padding-bottom: 1.5em;
 `
 export const IntroSection = styled.div`
-    /* color: ${props => props.theme.color.white}; */
     max-width: 750px;
 
 `
-
 export const PageContent = styled.div`
     padding-top: 0em;
     display: flex;
@@ -75,13 +66,11 @@ export const PageContent = styled.div`
     h1 {
         font-size: 35px;
     }
-
     h2 {
        font-size: 29px; 
        font-weight: 700;
        font-family: "PT Sans Narrow";
     }
-
     h3 {
         margin-top: .5em;
     }
@@ -103,15 +92,9 @@ export const BlogPosts = styled.div`
 export const Intro = styled.div`
     display: flex;
     flex-direction: row;
-    /* border: 1px solid ${props => props.theme.color.navy}; */
     overflow: hidden;
-    /* max-width: 800px; */
     margin-top: 1em;
-    /* padding: .75em 0em; */
     border-radius: 3px;
-    /* color: ${props => props.theme.color.white}; */
-    /* background-color: #f5f5f5; */
-    
 `
 
 export const AuthorImage = styled.div`
@@ -135,7 +118,6 @@ export const IntroBlurb = styled.div`
         font-size: 20px;
         font-weight: 700;
     }
-
     p {
         line-height: 25px;
     }
@@ -148,10 +130,8 @@ export const AuthorBlurb = styled.div`
         font-size: 20px;
         font-weight: 700;
     }
-
     p {
         font-family: "Barlow";
-
         line-height: 20px;
     }
 `
@@ -159,32 +139,21 @@ export const AuthorBlurb = styled.div`
 export const Footer = styled.div`
     display: flex;
     flex-direction: column;
-    /* border-top: 1px solid ${props => props.theme.color.navy}; */
     max-width: 750px;
-
-    h2 {
-        /* color: #EB6841; */
-        font-size: 23px;
-    }
-
-    /* flex-direction: row; */
-    /* border: 1px solid ${props => props.theme.color.navy}; */
     padding: 1em;
     margin-top: 2em;
-
     background-color: #f5f5f5;
-    /* margin-top: auto; */
+
+    h2 {
+        font-size: 23px;
+    }
 `
 
 export const Author = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 1px solid ${props => props.theme.color.navy}; */
     overflow: hidden;
-    h2 {
-        
-    }
 `
 export const ReadMore = styled.div`
     display: flex;
@@ -198,7 +167,6 @@ export const ReadMore = styled.div`
         font-size: 20px;
         font-weight: 700;
     }
-
     p {
         line-height: 20px;
     }

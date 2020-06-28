@@ -22,7 +22,8 @@ export const theme = {
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
-
+    background-color: ${props => props.theme.color.white};
+    
     a {
         text-decoration: none;
         color: inherit;

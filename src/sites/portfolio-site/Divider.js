@@ -5,8 +5,8 @@ import { StyledDivider, DividerTopShape, DividerBottomShape } from './Divider.st
 const Divider = (props) => {
     return(
         <StyledDivider>
-            {/* <DividerTopShape topColor={props.topColor}/>
-            <DividerBottomShape topColor={props.topColor}/> */}
+            <DividerTopShape topColor={props.topColor}/>
+            <DividerBottomShape topColor={props.topColor}/>
         </StyledDivider>
     )
 }
